@@ -1,0 +1,152 @@
+:root {
+    --turquoise: #00EFE1;
+    --mid-turquoise: hsl(176, 83%, 46%);
+    --dark-turquoise: #00333F;
+    --black: #030416;
+    --white: #F1F1F1;
+    --grey: #D6E2E7;
+    --dark-grey: #7F8A8E;
+    --yellow: #F9C51A;
+    --red: #b90202;
+    --fuschia: #E80352;
+    --blue: #338FFF;
+    --blue-dark: #145CB3;
+    --purple: #CDA2FF;
+    --green: #00EF7C;
+    --color: var(--white);
+    --background: var(--red);
+    --primary: var(--turquoise);
+  }
+  /* layout */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+    color: var(--color);
+    background-color: var(--background);
+  }
+  .App {
+    color: var(--color);
+    background-color: var(--background);
+    min-height: 100vh;
+  }
+  .App.light {
+    --color: var(--black);
+    --background: var(--white);
+    --primary: var(--mid-turquoise);
+  }
+  section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* buttons */
+  button {
+      
+    max-width: 100px;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    font: inherit;
+    font-weight: 600;
+    color: inherit;
+    cursor: pointer;
+    color: var(--primary);
+    background-color: var(--background);
+    border: 3px solid var(--black);
+    transition: background-color 0.2s;
+  }
+
+  #main-btn{
+      display: flex;
+      align-items: center;
+  }
+
+  button.active,
+  button:focus,
+  button:hover {
+    outline: none;
+    color: var(--white);
+    background-color: var(--primary);
+    border: 2px solid var(--black);
+  }
+  
+  
+  button.blue.active,
+  button.blue:focus,
+  button.blue:hover {
+    color: var(--white);
+    background-color: var(--blue);
+    border: 2px solid var(--black);
+  }
+  
+  /* forms */
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid var(--dark-turquoise);
+    padding: 1.75rem;
+  }
+  .form h3 {
+    margin-bottom: 1rem;
+  }
+  input,
+  textarea,
+  select {
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 2px solid var(--color);
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    border: 2px solid var(--primary);
+  }
+  .form button[type="submit"] {
+    width: 50%;
+    cursor: pointer;
+  }
+  /* Filter */
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .filter button {
+    margin: 0 1rem;
+  }
+  
+  div {
+      display: flex;
+      flex-direction: column;
+    margin: 2rem;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  #top-div {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    background-color: var(--dark-grey); 
+    border: 2px solid var(--yellow);
+  }
+
+  h3 {
+      font-size: 2rem;
+  }

@@ -1,5 +1,5 @@
 import React from "react";
-import SpicyFoodList from "./SpicyFoodList";
+import SpicyFoodList from "./SpicyFoodList"
 
 function App() {
   return (
